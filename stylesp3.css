@@ -476,3 +476,122 @@ html {
 .faq-item.active .faq-answer {
     display: block; /* Show answer when active */
 }
+/* Media Queries for Tablets and Smaller Devices */
+
+/* For devices with a max width of 1024px (tablets) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem; /* Adjust header size for tablets */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .slider img {
+        width: 100%; /* Ensure images fit within the container */
+    }
+
+    #home h2, #about h2, #services h2, #testimonials h2 {
+        font-size: 1.8rem; /* Adjust heading sizes */
+    }
+
+    .form-section {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .form-section input, .form-section select, .form-section textarea {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .form-section button {
+        font-size: 1rem; /* Adjust button size */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+/* For devices with a max width of 768px (small tablets and large phones) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem; /* Smaller header size */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .slider {
+        flex-direction: column; /* Stack slider items */
+    }
+
+    #home h2, #about h2, #services h2, #testimonials h2 {
+        font-size: 1.5rem; /* Adjust heading sizes */
+    }
+
+    .form-section {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .form-section input, .form-section select, .form-section textarea {
+        font-size: 0.85rem; /* Adjust font size */
+    }
+
+    .form-section button {
+        font-size: 0.9rem; /* Adjust button size */
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* One column on small tablets */
+    }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller header size */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 5px; /* Reduce gap */
+    }
+
+    .slider img {
+        max-width: 100%; /* Ensure images fit within the container */
+    }
+
+    #home h2, #about h2, #services h2, #testimonials h2 {
+        font-size: 1.2rem; /* Adjust heading sizes */
+    }
+
+    .form-section {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .form-section input, .form-section select, .form-section textarea {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+    .form-section button {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* One column on mobile */
+    }
+
+    .coaches-list {
+        flex-direction: column; /* Stack coach cards */
+        align-items: center; /* Center align */
+    }
+
+    .coach {
+        max-width: 90%; /* Limit width on mobile */
+    }
+}
