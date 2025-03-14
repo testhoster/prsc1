@@ -1,0 +1,478 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Main Background */
+body {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header Styling */
+header {
+    background-color: #212121; /* Black background */
+    color: #f0c100; /* Gold text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .logo-container img {
+    width: 100px; /* Limit logo width to 100px */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Increased font size for prominence */
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    color: #f0c100; /* Gold links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+header nav ul li a:hover {
+    color: #ff6f61; /* Subtle red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    color: #f0c100; /* Gold heading */
+}
+
+.slider {
+    position: relative; /* Position relative for absolute buttons */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow for sliding effect */
+}
+
+.slider .slide-container {
+    display: flex; /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.slider img {
+    width: 50%; /* Each image takes up half the width */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212121; /* Black for contrast */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffeb3b; /* Gold background for the tagline */
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Optional: Add a subtle animation for the tagline */
+@keyframes taglineAnimation {
+    0% { transform: translateY(-10px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.tagline {
+    animation: taglineAnimation 1s ease-out;
+}
+
+/* About Us Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0c100; /* Gold background */
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #212121; /* Black text for headings */
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #212121; /* Black background */
+}
+
+#services h2 {
+    font-size: 2rem;
+    color: #f0c100; /* Gold heading */
+}
+
+#services ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: #f0c100; /* Gold text */
+}
+
+#services ul li {
+    margin: 10px 0;
+}
+
+/* Blog Section */
+#blog {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: blueviolet; /* Light background */
+}
+
+#blog h2 {
+    font-size: 2rem;
+    color: #212121; /* Black for headings */
+}
+
+#blog p {
+    font-size: 1.2rem;
+    color: #333333;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ff6f61; /* Subtle red background */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: white; /* White text for headings */
+}
+
+#inquiry-type-selector {
+    margin-bottom: 20px;
+}
+
+#inquiry-type-selector button {
+    background-color: #212121; /* Black button background */
+    color: #f0c100; /* Gold text */
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+    margin: 0 10px;
+}
+
+#inquiry-type-selector button:hover {
+    background-color: #ff6f61; /* Subtle red on hover */
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    background-color: #ff6f61; /* Subtle red background */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #212121; /* Black background on hover */
+}
+
+/* Hidden Class for Form Switching */
+.hidden {
+    display: none;
+}
+
+/* Testimonials Section */
+#testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: lightblue; /* Light background */
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #212121; /* Black heading */
+}
+
+#testimonials p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Gallery Section */
+#gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0c100; /* Gold background */
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    color: #212121; /* Black heading */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Adjust width to fill the grid */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the space */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #212121; /* Black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact h2, #services h2, #about h2, #testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-section input, .form-section select, .form-section textarea {
+        font-size: 0.9rem;
+    }
+
+    .form-section button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .slider img {
+        max-width: 100%;
+    }
+
+    #home h2, #about h2, #services h2, #testimonials h2 {
+        font-size: 1.2rem;
+    }
+
+    .form-section input, .form-section select, .form-section textarea {
+        font-size: 0.85rem;
+    }
+
+    .form-section button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Coaches Corner Section */
+#coaches-corner {
+    background-color: #f4f4f4; /* Light gray background */
+    text-align: center;
+    padding: 20px;
+}
+
+.coaches-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.coach {
+    background-color: #fff; /* White background for coach cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.coach img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.coach h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.coach p {
+    color: #555;
+    font-size: 14px;
+}
+
+.coach:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Frequently Asked Questions */
+#faq {
+    background-color: #ff8500; /* Bright orange background */
+    text-align: center;
+    padding: 30px;
+    color: #ffffff; /* White text for contrast */
+}
+
+.faq-item {
+    background-color: #ffffff; /* White background for FAQ items */
+    color: #333; /* Dark text for readability */
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.faq-item h3 {
+    color: #d35400; /* Darker orange for headings */
+    font-size: 18px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.faq-item:hover {
+    background-color: #f9f9f9; /* Change background color on hover */
+}
+
+/* Map Section */
+#map {
+    background-color: lavender;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* FAQ Answer Visibility */
+.faq-answer {
+    display: none; /* Hide answers by default */
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Show answer when active */
+}
